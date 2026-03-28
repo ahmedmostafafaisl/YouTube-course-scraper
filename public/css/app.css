@@ -1,0 +1,90 @@
+:root {
+    --brand: #dc4f43;
+    --dark: #101b4d;
+    --muted-bg: #f5f6fa;
+}
+
+body {
+    background: var(--muted-bg);
+    color: #1f2937;
+}
+
+.navbar-brand {
+    color: var(--dark) !important;
+}
+
+.scraper-hero {
+    background: linear-gradient(135deg, #0f1b4c, #233b87);
+    color: #fff;
+    border-radius: 24px;
+    padding: 2.5rem;
+    box-shadow: 0 20px 45px rgba(15, 27, 76, 0.12);
+}
+
+.panel-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 45px rgba(15, 27, 76, 0.08);
+}
+
+.playlist-card {
+    border: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(15, 27, 76, 0.08);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.playlist-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 36px rgba(15, 27, 76, 0.12);
+}
+
+.playlist-thumb {
+    height: 220px;
+    object-fit: cover;
+    background: #e9ecef;
+}
+
+.form-control,
+.btn {
+    border-radius: 14px;
+}
+
+.btn-danger {
+    background-color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-danger {
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-danger:hover {
+    background-color: var(--brand);
+    border-color: var(--brand);
+}
+
+.pagination {
+    justify-content: center;
+}
+
+.page-link {
+    color: var(--dark);
+}
+
+.page-item.active .page-link {
+    background-color: var(--brand);
+    border-color: var(--brand);
+}
+
+@media (max-width: 767.98px) {
+    .scraper-hero {
+        padding: 1.5rem;
+    }
+
+    .playlist-thumb {
+        height: 190px;
+    }
+}
